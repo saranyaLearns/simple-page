@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwindcss</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="h-full w-full">
+    <nav class="bg-blue-200 sticky top-0 ">
+        <div class="container lg:flex items-center mx-auto px-5 py-2">
+            
+            <div class="flex justify-between">
+                <a href="#">
+                    <img src="image/logo.png" alt="" class="h-14">
+                </a>
+                <h2 class="flex justify-between items-center pl-4 text-xl font-bold">tailwindcss</h2>
+                <button onclick="toggleMenu()" class="px-4 py-2 rounded-md bg-blue-400 text-white lg:hidden">
+                    <i class="fa fa-navicon"></i>
+                </button>
+            </div>
+
+           <div id="menu" class="ml-auto mt-5 lg:mt-0 hidden lg:block">
+            
+            <ul class="lg:flex">
+                <li class="mx-1 px-6 py-2 text-white"><a href="#home">Home</a></li>
+                <li class="hover:text-blue-500 mx-1 px-6 py-2"><a href="#doc">Docs</a></li>
+                <li class="hover:text-blue-500 mx-1 px-6 py-2 relative group">
+                    <a href="#components" class="hovertext-blue-500">Components</a>
+                </li>
+                <li class="hover:text-blue-500 mx-1 px-6 py-2"><a href="#blog">Blog</a></li>
+                <li class="hover:text-blue-500 mx-1 px-6 py-2"><a href="#showcase">Showcase</a></li>
+            </ul>
+           </div>
+        </div>
+    </nav>
+    <section id="home" class="h-screen bg-gradient-to-br from-blue-200 cyan-100 via-sky-500 via-white to-pink-250">
+        <div class="main-heading flex items-center justify-center h-screen ml-4 mr-4">
+            <div class="home-content flex flex-col">
+                <h1 class="font-medium text-5xl">
+                    Rapidly build modern websites <br> 
+                     without ever leaving your HTML.
+                </h1>
+                <h3 class="flex justify-center items-center mt-5 text-lg text-grey-200">
+                    A utility-first CSS framework packed with classes like flex, pt-4,text-center
+                </h3>
+                </h3>
+                <div class="home-btn mt-5 md:flex justify-center items-center flex-row sm:flex-column space-y-4 text-center">
+                    <button class="bg-black text-white font-bold py-2 px-4 rounded mr-5 mt-4">
+                        Get Started
+                      </button>  
+                      
+                      <button class="bg-white hover:bg-gray-100 text-gray-600 font-semibold py-2 px-4 border border-gray-400 rounded shadow w-60">
+                        Quick Search....
+                      </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="doc" class="h-screen bg-gradient-to-br from-blue-200 cyan-100 via-sky-500 via-white to-pink-250">
+        <h1 class="py-4"></h1>
+        <div class="doc-content"> 
+           
+            <div class="doc-right ml-4">
+                <p class="text-blue-500 font-bold">Installation</p>
+                <h1 class="mt-2 text-3xl">Get started with Tailwind CSS</h1>
+                <p class="text-normal text-gray-600 mt-3 mb-3">Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file.</p>
+                <p class="text-xl text-gray-600 mt-3 mb-3">It's fast, flexible, and reliable — with zero-runtime.</p>
+                <p class="text-2xl mb-2">Installation</p>
+                <p class="text-gray-600">The simplest and fastest way to get up and running with Tailwind CSS from scratch is with the Tailwind CLI tool. The CLI is also available as a standalone executable if you want to use it without installing Node.js.</p>
+                <h1 class="text-xl mt-2">Install Tailwind CSS</h1>
+                <p class="text-sm text-grey-500 mt-2 ">Install tailwindcss via npm, and create your</p>
+                <p class="text-sm text-grey-500 mt-1 ">tailwind.config.js file.</p>
+                <h1 class="text-xl mt-2">Configure your template paths</h1>
+                <p class="text-sm text-grey-500 mt-2 ">Add the paths to all of your template files in your </p>
+                <p class="text-sm text-grey-500 mt-1 ">tailwind.config.js file.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="components" class="h-screen bg-gradient-to-br from-blue-200 cyan-100 via-sky-500 via-white to-pink-250">
+        
+        <div class="component-heading flex items-center justify-center h-screen">
+            <div class="component-content flex flex-col text-center">
+                <p class="mt-4">By the makers of Tailwind CSS</p>
+                <h1 class="font-medium text-4xl">
+                    Build your next idea <br> 
+                    even faster.
+                </h1>
+                <h3 class="flex justify-center items-center mt-5 text-lg text-grey-200">
+                    Beautifully designed, expertly crafted components and templates, built by the makers of Tailwind CSS. The perfect starting point for your next project.
+                </h3>
+                </h3>
+                <div class="home-btn mt-4 md:flex justify-center items-center flex-row sm:flex-column space-y-4 text-center">
+                    <button class="bg-black text-white font-bold py-2 px-4 rounded mr-5 mt-4">
+                        Browse Components <i class="fa fa-arrow-right ml-2"></i>
+                      </button>  
+                      
+                      <button class="bg-white hover:bg-gray-100 text-gray-600 font-semibold py-2 px-4 border border-gray-400 rounded shadow w-60">
+                        Explore Components <i class="fa fa-arrow-right ml-2"></i>
+                      </button>
+                </div>
+            </div>
+        </div>
+      
+        
+    </section>
+    <section id="blog" class="bg-gradient-to-br from-blue-200 cyan-100 via-sky-500 via-white to-pink-250">
+        <div class="blog-content flex justify-center items-center flex-col text-center h-screen">
+            <h1 class="text-4xl font-medium">Latest Updates</h1>
+            <h1 class="text-xl mt-4 bg-grey-100">All the latest Tailwind CSS news, straight from the team.</h1>
+            <div class="blog-btn mt-4 md:flex justify-center items-center flex-row sm:flex-column space-y-4 text-center">
+                  <button class="bg-white hover:bg-blue-200 text-gray-600 font-semibold mt-4 mr-5 py-2 px-4 border border-gray-400 rounded shadow w-60">
+                    Subscribe via email <i class="fa fa-envelope-o mr-4"></i>
+                  </button>
+                  <button class="bg-blue-600 text-white font-bold py-2 px-4 rounded mt-2">
+                    Subscribe
+                  </button>
+            </div>
+            <div class="blog-change mt-4">
+                <p class="mt-4">April 24, 2023</p>
+                <p class="text-xl">
+                    New changelog template + the biggest Tailwind UI update ever
+                </p>
+                <p class="text-gray-600 mt-3">
+                    Over the last four months we have probably done more work on Tailwind UI than we ever have, and having finally wrapped up what we set out to achieve I’m excited to lay it all out for you.
+                    <span class="m-4 text-blue-500 text-xl">Read More <i class="fa fa-angle-double-right mr-4 text-blue-500"></i> </span>
+                </p>
+                
+
+                <p class="mt-2">March 28, 2023</p>
+                <p class="text-xl">
+                    Tailwind CSS v3.3: Extended color palette, ESM/TS support, logical properties, and more
+                </p>
+                <p class="text-gray-600 mt-3">
+                    Tailwind CSS v3.3 is here — bringing a bunch of new features people have been asking for forever, and a bunch of new stuff you didn’t even know you wanted.          
+                    <span class="m-4 text-blue-500 text-xl">Read More <i class="fa fa-angle-double-right mr-4 text-blue-500"></i> </span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="showcase" class="bg-gradient-to-br from-blue-200 cyan-100 via-sky-500 via-white to-pink-250">
+        <div class="showcase-content flex justify-center items-center flex-col h-screen">
+                <p class="text-blue-500 text-xl font-bold flex justify-between items-center">Showcase</p>
+                <h1 class="text-5xl font-medium">You can build anything <br>
+                 with Tailwind CSS.</h1>
+                <p class="mt-4">
+                    <p class="mt-2 text-2xl text-gray-500">Well not quite anything, like you can't build a spaceship with it. But you can</p> 
+                    <p class="mt-2 text-2xl text-gray-500">definitely build the website for the spaceship -
+                        <a href="#">
+                            <span class="text-3xl text-black underline"> NASA did.</span> 
+                        </a>
+                    </p>
+                </p>
+        </div>
+    </section>
+    <div class="footer flex justify-center items-center flex-col">
+        <a href="#">
+            <img src="image/logo.png" alt="" class="h-8">
+        </a>
+        <p class="text-xl">tailwind css</p>
+        <p>Leisure Learner</p>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>
